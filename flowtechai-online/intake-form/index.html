@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Intake Form | FlowTech Digital Solutions</title>
+    <meta name="description" content="Schedule your free consultation with FlowTech Digital Solutions. Get professional web development, design, and digital marketing services tailored to your business.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-wrapper {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 3rem;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo svg {
+            width: 180px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .required {
+            color: #e53e3e;
+            margin-left: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            background: #f7fafc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 20px;
+            padding-right: 3rem;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 1.125rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+        .submit-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message {
+            display: none;
+            background: #48bb78;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .error-message {
+            display: none;
+            background: #f56565;
+            color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .error-message.show {
+            display: block;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .privacy-note {
+            font-size: 0.875rem;
+            color: #718096;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .form-wrapper {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        .loading-spinner {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .submit-button.loading .button-text {
+            display: none;
+        }
+
+        .submit-button.loading .loading-spinner {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Logo -->
+            <div class="logo">
+                <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <text x="10" y="35" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="url(#logoGradient)">FlowTech</text>
+                </svg>
+            </div>
+
+            <h1>Start Your Project</h1>
+            <p class="subtitle">Schedule a free consultation and let's build something amazing together</p>
+
+            <form id="intakeForm" method="POST" action="/api/intake">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+61 4XX XXX XXX">
+                </div>
+
+                <!-- Business Name -->
+                <div class="form-group">
+                    <label for="business">Business Name <span class="required">*</span></label>
+                    <input type="text" id="business" name="business" required placeholder="Your Company Pty Ltd">
+                </div>
+
+                <!-- Package Interest -->
+                <div class="form-group">
+                    <label for="package">Package of Interest <span class="required">*</span></label>
+                    <select id="package" name="package_interest" required>
+                        <option value="">Select a package...</option>
+                        <option value="starter">Starter Package - $997 + $197/mo</option>
+                        <option value="growth">Growth Package - $1,997 + $497/mo</option>
+                        <option value="premium">Premium Package - $4,997 + $997/mo</option>
+                        <option value="custom">Custom Solution</option>
+                    </select>
+                </div>
+
+                <!-- Project Description -->
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Project <span class="required">*</span></label>
+                    <textarea id="message" name="message" required placeholder="Describe your project goals, timeline, and any specific requirements..."></textarea>
+                </div>
+
+                <!-- How Did You Hear About Us -->
+                <div class="form-group">
+                    <label for="source">How did you hear about us?</label>
+                    <select id="source" name="source">
+                        <option value="">Select an option...</option>
+                        <option value="google">Google Search</option>
+                        <option value="social">Social Media</option>
+                        <option value="referral">Referral</option>
+                        <option value="website">Our Website</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Consent -->
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            I agree to receive communications from FlowTech Digital Solutions and understand that my information will be handled according to the <a href="/privacy" style="color: #667eea; text-decoration: none;">Privacy Policy</a>. <span class="required">*</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Schedule Free Consultation</span>
+                    <div class="loading-spinner"></div>
+                </button>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message">
+                    <strong>Thank you!</strong><br>
+                    Your consultation request has been received. We'll contact you within 24 hours to schedule your free consultation.
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="error-message">
+                    Something went wrong. Please try again or email us directly at <a href="mailto:contact@flowtechai.online" style="color: white; text-decoration: underline;">contact@flowtechai.online</a>
+                </div>
+            </form>
+
+            <div class="privacy-note">
+                🔒 Your information is secure and will never be shared with third parties.<br>
+                Questions? Email <a href="mailto:contact@flowtechai.online" style="color: #667eea; text-decoration: none;">contact@flowtechai.online</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handling
+        document.getElementById('intakeForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitButton = form.querySelector('.submit-button');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Reset messages
+            successMessage.classList.remove('show');
+            errorMessage.classList.remove('show');
+            
+            // Show loading state
+            submitButton.classList.add('loading');
+            submitButton.disabled = true;
+            
+            try {
+                // Prepare form data
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+                
+                // Add timestamp
+                data.submitted_at = new Date().toISOString();
+                
+                // Submit to backend API
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    // Success
+                    form.reset();
+                    successMessage.classList.add('show');
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    // Server error
+                    throw new Error('Server error');
+                }
+            } catch (error) {
+                // Show error message
+                errorMessage.classList.add('show');
+                console.error('Form submission error:', error);
+            } finally {
+                // Reset loading state
+                submitButton.classList.remove('loading');
+                submitButton.disabled = false;
+            }
+        });
+        
+        // Real-time form validation
+        const form = document.getElementById('intakeForm');
+        const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '') {
+                    this.style.borderColor = '#f56565';
+                } else {
+                    this.style.borderColor = '#48bb78';
+                }
+            });
+            
+            input.addEventListener('focus', function() {
+                this.style.borderColor = '#667eea';
+            });
+        });
+        
+        // Email validation
+        const emailInput = document.getElementById('email');
+        emailInput.addEventListener('blur', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (this.value && !emailRegex.test(this.value)) {
+                this.style.borderColor = '#f56565';
+            } else if (this.value) {
+                this.style.borderColor = '#48bb78';
+            }
+        });
+    </script>
+</body>
+</html>
