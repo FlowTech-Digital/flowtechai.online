@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Package - Full-Service Digital Operations | FlowTech Digital Solutions</title>
+    <meta name="description" content="$4,997 setup + $997/month. Complete digital presence outsourcing with custom website, e-commerce, extensive marketing, and VIP support.">
+    
+    <!-- Google Fonts - Inter (Premium Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* FlowTech Digital Solutions - Premium Package Brand Design      */
+        /* Full Brand Implementation - Professional Design System          */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        :root {
+            --brand-primary: #667eea;
+            --brand-primary-dark: #5145cd;
+            --badge-premium: #a78bfa;
+            --badge-premium-dark: #8b5cf6;
+            --badge-premium-text: #4c1d95;
+            --success: #10b981;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-brand: 0 10px 25px -5px rgba(102, 126, 234, 0.2);
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-full: 9999px;
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--gray-600);
+            background: var(--gray-50);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-8);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: 40px;
+            border-radius: 8px;
+        }
+        
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: opacity 150ms;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--badge-premium) 0%, var(--badge-premium-dark) 100%);
+            color: var(--badge-premium-text);
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/Brand_Assets/FlowTech_Digital_Solutions/web/hero-light-2400w.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.06;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(76, 29, 149, 0.15);
+            padding: 0.5rem 1.5rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .pricing-hero {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            display: inline-block;
+            box-shadow: var(--shadow-lg);
+            margin-top: 1rem;
+        }
+        
+        .price-setup {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-monthly {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-note {
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+        
+        .cta-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-top: 1.5rem;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-brand);
+        }
+        
+        .content-section {
+            background: white;
+            padding: var(--space-16) 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--gray-500);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            border-left: 4px solid var(--badge-premium);
+            transition: all var(--transition-base);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .feature-card h3 {
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--gray-600);
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+        
+        .details-section {
+            background: var(--gray-50);
+            padding: var(--space-16) 0;
+        }
+        
+        .detail-box {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .detail-box h3 {
+            color: var(--gray-800);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .timeline-item {
+            text-align: center;
+        }
+        
+        .timeline-day {
+            background: var(--badge-premium);
+            color: var(--badge-premium-text);
+            font-weight: 700;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.125rem;
+        }
+        
+        .timeline-item p {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+        
+        .ideal-for-section {
+            background: white;
+            padding: var(--space-16) 0;
+        }
+        
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .profile-card {
+            background: linear-gradient(135deg, var(--badge-premium) 0%, var(--badge-premium-dark) 100%);
+            color: var(--badge-premium-text);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .profile-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-card h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-card p {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+        
+        .faq-section {
+            background: var(--gray-50);
+            padding: var(--space-16) 0;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .faq-question {
+            color: var(--gray-800);
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .faq-answer {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%);
+            color: white;
+            padding: var(--space-16) 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--brand-primary);
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .cta-button-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-button-secondary:hover {
+            background: white;
+            color: var(--brand-primary);
+        }
+        
+        footer {
+            background: var(--gray-900);
+            color: var(--gray-500);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--brand-primary);
+            text-decoration: none;
+            transition: opacity 150ms;
+        }
+        
+        footer a:hover {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero {
+                padding: 4rem 0;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo-link">
+                    <img src="/Brand_Assets/FlowTech_Digital_Solutions/web/icon-192.png" 
+                         alt="FlowTech Digital Solutions" 
+                         class="logo-image" />
+                    <span class="logo-text">FlowTech Digital Solutions</span>
+                </a>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/services">Services</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🥇 PREMIUM PACKAGE</div>
+                <h1>Full-Service Digital Operations</h1>
+                <p class="subtitle">Complete digital presence outsourcing for established businesses</p>
+                
+                <div class="pricing-hero">
+                    <div class="price-setup">$4,997 Setup Fee</div>
+                    <div class="price-monthly">$997 per month</div>
+                    <div class="price-note">12-month minimum commitment</div>
+                </div>
+                
+                <a href="https://buy.stripe.com/fZufZj9fCcMScqP8rD93y02" class="cta-primary">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You Get</h2>
+                <p>Complete digital operations outsourcing - your dedicated marketing department</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🌐 Custom 15+ Page Website</h3>
+                    <ul class="feature-list">
+                        <li>Fully custom design tailored to your brand</li>
+                        <li>Advanced functionality (forms, calculators, portals)</li>
+                        <li>E-commerce integration (if applicable)</li>
+                        <li>Booking system integration</li>
+                        <li>CMS for easy content management</li>
+                        <li>Enterprise hosting & security</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔍 Advanced SEO + PPC</h3>
+                    <ul class="feature-list">
+                        <li>Comprehensive SEO strategy (50+ keywords)</li>
+                        <li>Technical SEO audits & optimization</li>
+                        <li>Local SEO domination</li>
+                        <li>Google Ads campaign management</li>
+                        <li>Facebook/Instagram ad campaigns</li>
+                        <li>Conversion rate optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>✍️ Extensive Content Marketing</h3>
+                    <ul class="feature-list">
+                        <li>4 SEO-optimized blog posts per month</li>
+                        <li>Long-form content (1,200+ words)</li>
+                        <li>Video script writing</li>
+                        <li>Case study development</li>
+                        <li>Whitepapers & ebooks (quarterly)</li>
+                        <li>Content calendar planning</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📱 Full Social Media Management</h3>
+                    <ul class="feature-list">
+                        <li>5 posts per week (20+/month)</li>
+                        <li>Multi-platform coverage</li>
+                        <li>Custom graphics & video editing</li>
+                        <li>Community management & engagement</li>
+                        <li>Influencer outreach campaigns</li>
+                        <li>Social media advertising</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📧 Advanced Email Marketing</h3>
+                    <ul class="feature-list">
+                        <li>Weekly email campaigns (4/month)</li>
+                        <li>Automated drip sequences</li>
+                        <li>Segmentation & personalization</li>
+                        <li>A/B testing optimization</li>
+                        <li>Newsletter design & copywriting</li>
+                        <li>Lead nurturing workflows</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎯 Strategy & Analytics</h3>
+                    <ul class="feature-list">
+                        <li>Monthly strategy consultation</li>
+                        <li>Comprehensive analytics dashboard</li>
+                        <li>Competitor analysis reports</li>
+                        <li>ROI tracking & attribution</li>
+                        <li>Quarterly strategic planning</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🛠️ Unlimited Management</h3>
+                    <ul class="feature-list">
+                        <li>Unlimited website updates</li>
+                        <li>VIP support (4-hour response)</li>
+                        <li>Priority development queue</li>
+                        <li>Emergency support available</li>
+                        <li>Monthly performance reviews</li>
+                        <li>Dedicated Slack channel</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🚀 Growth Initiatives</h3>
+                    <ul class="feature-list">
+                        <li>Partnership outreach campaigns</li>
+                        <li>PR & media relations</li>
+                        <li>Event marketing support</li>
+                        <li>Affiliate program setup</li>
+                        <li>Marketing automation workflows</li>
+                        <li>CRM integration & management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="container">
+            <div class="detail-box">
+                <h3>📅 Delivery Timeline: 10-14 Business Days</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 1-3</div>
+                        <p><strong>Discovery & Audit</strong><br>Comprehensive brand audit, competitive analysis, strategic planning</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 4-7</div>
+                        <p><strong>Design & Development</strong><br>Custom website design, advanced features, e-commerce setup</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 8-10</div>
+                        <p><strong>Content & SEO</strong><br>Content creation, keyword optimization, technical SEO implementation</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 11-12</div>
+                        <p><strong>Marketing Setup</strong><br>Social profiles, email automation, ad campaigns, analytics</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 13-14</div>
+                        <p><strong>Launch & Training</strong><br>Go live, team training, campaign launch, handoff materials</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="detail-box">
+                <h3>🔄 Ongoing Monthly Services ($997/month)</h3>
+                <ul class="feature-list">
+                    <li><strong>Content Production</strong> - 4 long-form blog posts (1,200+ words each), video scripts, case studies</li>
+                    <li><strong>Social Media</strong> - 20+ posts per month with custom graphics, video editing, community management</li>
+                    <li><strong>Email Marketing</strong> - 4 weekly campaigns, automated sequences, A/B testing, optimization</li>
+                    <li><strong>Website Management</strong> - Unlimited content updates, feature additions, maintenance</li>
+                    <li><strong>SEO & PPC</strong> - Ongoing optimization, Google Ads, Facebook/Instagram ads, conversion tracking</li>
+                    <li><strong>Analytics & Reporting</strong> - Comprehensive dashboard, monthly reviews, quarterly strategic planning</li>
+                    <li><strong>Strategy Consultation</strong> - Monthly 60-minute strategy session with account manager</li>
+                    <li><strong>VIP Support</strong> - 4-hour response time, dedicated Slack channel, emergency support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="ideal-for-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perfect For</h2>
+                <p>This package is specifically designed for:</p>
+            </div>
+            
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <div class="profile-icon">🏢</div>
+                    <h4>Established Businesses</h4>
+                    <p>Companies with $500K+ revenue ready to invest in comprehensive digital operations</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">🌍</div>
+                    <h4>Multi-Location Operations</h4>
+                    <p>Businesses with 5+ locations needing centralized marketing and consistent branding</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">💼</div>
+                    <h4>Professional Services</h4>
+                    <p>Law firms, accounting, consulting firms requiring high-touch marketing department</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">🛒</div>
+                    <h4>E-commerce Businesses</h4>
+                    <p>Online retailers needing complete digital marketing, ads, email, and social management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: Why is there a 12-month minimum commitment?</div>
+                <div class="faq-answer">A: Premium digital operations require 6-12 months to show full ROI. This timeline allows us to build comprehensive campaigns, optimize performance, and deliver measurable business growth - not just marketing activity.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: What's included in "unlimited website updates"?</div>
+                <div class="faq-answer">A: Any content changes, new pages, feature additions, or maintenance tasks. This doesn't include complete site redesigns (which would be a new project), but covers all ongoing operational needs.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: How is this different from hiring an in-house marketing team?</div>
+                <div class="faq-answer">A: You get a complete department (designer, developer, copywriter, SEO specialist, ad manager, strategist) for less than one full-time employee's salary. No hiring, training, management, or turnover concerns.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: Can you work with our existing brand guidelines?</div>
+                <div class="faq-answer">A: Absolutely! We integrate seamlessly with your existing brand standards, style guides, and creative direction. If you don't have formal guidelines, we'll develop them as part of onboarding.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: What happens if our needs change during the 12 months?</div>
+                <div class="faq-answer">A: Premium package is flexible. Need to shift from PPC to content? Want to add video marketing? We adapt your strategy monthly based on performance and business goals.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: Do you guarantee results?</div>
+                <div class="faq-answer">A: We guarantee effort, expertise, and execution. While we can't control market conditions or guarantee specific outcomes, our Premium clients typically see 40-60% growth in qualified leads within 6 months.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Outsource Your Digital Operations?</h2>
+            <p>Join established businesses who trust FlowTech as their complete marketing department</p>
+            
+            <div class="cta-buttons">
+                <a href="https://buy.stripe.com/fZufZj9fCcMScqP8rD93y02" class="cta-button">Start Premium Package</a>
+                <a href="/intake-form" class="cta-button cta-button-secondary">Schedule Strategy Call</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.9;">
+                Questions? Email us at hello@flowtechai.online or call (02) 1234 5678
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FlowTech Digital Solutions. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="/services">All Services</a>
+                <a href="/services/starter" style="margin: 0 1rem;">Starter Package</a>
+                <a href="/services/growth">Growth Package</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
