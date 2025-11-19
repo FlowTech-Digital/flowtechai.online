@@ -1,130 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowTech Digital Solutions - Professional Digital Services at Bootstrap Prices</title>
-    <meta name="description" content="FlowTech Digital Solutions delivers enterprise-quality web design, SEO, and digital marketing at bootstrap-friendly prices. Perfect for small businesses ready to scale.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Analytics 4 - FlowTech Digital Solutions -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCTZN584HM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);};
+    gtag('js', new Date());
     
-    <!-- Google Fonts - Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    gtag('config', 'G-PCTZN584HM', {
+      'send_page_view': true
+    });
+  </script>
+  <!-- End Google Analytics 4 -->
+  
+  <!-- Primary Meta Tags -->
+  <title>FlowTech Digital Solutions - AI-Powered Business Transformation</title>
+  <meta name="title" content="FlowTech Digital Solutions - AI-Powered Business Transformation">
+  <meta name="description" content="Professional digital transformation services and AI solutions for modern businesses">
+  
+  <!-- Favicon & PWA Icons -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/apple-touch-icon.png">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Theme Colors (FlowTech Brand) -->
+  <meta name="theme-color" content="#1E78FF">
+  <meta name="msapplication-TileColor" content="#0B1114">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowtechdigitalsolutions.com/">
+  <meta property="og:title" content="FlowTech Digital Solutions - AI-Powered Business Transformation">
+  <meta property="og:description" content="Professional digital transformation services and AI solutions for modern businesses">
+  <meta property="og:image" content="https://flowtechdigitalsolutions.com/assets/brand/og-dark.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://flowtechdigitalsolutions.com/">
+  <meta property="twitter:title" content="FlowTech Digital Solutions - AI-Powered Business Transformation">
+  <meta property="twitter:description" content="Professional digital transformation services and AI solutions for modern businesses">
+  <meta property="twitter:image" content="https://flowtechdigitalsolutions.com/assets/brand/og-dark.jpg">
+  
+  <!-- Brand CSS Variables -->
+  <style>
+    :root {
+      /* FlowTech AI Brand Colors (Brand Sheet v1.0) */
+      --ft-azure: #1E78FF;
+      --ft-obsidian: #0B1114;
+      --ft-indigo: #1B3B93;
+      --ft-white: #FFFFFF;
+      --ft-gray-light: #F5F5F5;
+      --ft-gray-dark: #333333;
+      
+      /* Typography */
+      --ft-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --ft-font-heading: 'Space Grotesk', var(--ft-font-primary);
+      
+      /* Spacing */
+      --ft-spacing-xs: 0.5rem;
+      --ft-spacing-sm: 1rem;
+      --ft-spacing-md: 2rem;
+      --ft-spacing-lg: 4rem;
+      --ft-spacing-xl: 6rem;
+    }
     
-    <style>
-        :root {
-            --brand-primary: #667eea;
-            --brand-primary-dark: #5145cd;
-            --brand-secondary: #764ba2;
-            --gray-50: #f9fafb;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-primary);
-            line-height: 1.6;
-            color: var(--gray-800);
-            background: var(--gray-50);
-        }
-        
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            color: white;
-        }
-        
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 2rem;
-            background: white;
-            border-radius: 24px;
-            padding: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 3rem;
-            opacity: 0.95;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 1.25rem 3rem;
-            background: white;
-            color: var(--brand-primary);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.125rem;
-            border-radius: 12px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-            background: var(--gray-50);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .tagline {
-                font-size: 1.25rem;
-            }
-            
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-        }
-    </style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--ft-font-primary);
+      background-color: var(--ft-obsidian);
+      color: var(--ft-white);
+      line-height: 1.6;
+    }
+    
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(11, 17, 20, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(30, 120, 255, 0.1);
+    }
+    
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-logo {
+      font-family: var(--ft-font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ft-azure);
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      color: var(--ft-white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--ft-azure);
+    }
+    
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--ft-obsidian) 0%, var(--ft-indigo) 100%);
+      padding-top: 4rem;
+    }
+    
+    .hero-content {
+      text-align: center;
+      padding: var(--ft-spacing-md);
+    }
+    
+    .hero-logo {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin-bottom: var(--ft-spacing-md);
+    }
+    
+    h1 {
+      font-family: var(--ft-font-heading);
+      font-size: clamp(2rem, 5vw, 4rem);
+      color: var(--ft-azure);
+      margin-bottom: var(--ft-spacing-sm);
+    }
+    
+    p {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      color: var(--ft-gray-light);
+      max-width: 800px;
+      margin: 0 auto var(--ft-spacing-md);
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: var(--ft-azure);
+      color: var(--ft-white);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      margin-top: var(--ft-spacing-sm);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3);
+    }
+    
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+      
+      nav {
+        padding: 0.75rem 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-content">
-            <div class="logo">
-                <img src="/Brand_Assets/FlowTech_Digital_Solutions/icon-192.png" alt="FlowTech Digital Solutions" style="width: 100%; height: 100%; object-fit: contain;">
-            </div>
-            
-            <h1>FlowTech Digital Solutions</h1>
-            
-            <p class="tagline">
-                Professional digital services at bootstrap-friendly prices.<br>
-                Enterprise quality. Small business pricing.
-            </p>
-            
-            <a href="/services/" class="cta-button">View Our Services</a>
-        </div>
-    </section>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-content">
+      <a href="/" class="nav-logo">FlowTech Digital</a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="mailto:hello@flowtechai.online">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="hero-content">
+      <img src="/assets/brand/flowtech-logo.png" alt="FlowTech Digital Solutions" class="hero-logo">
+      <h1>Web design, branding, and high-converting landing pages</h1>
+      <p>Professional quality at competitive rates. Fast turnaround. Proven results.</p>
+      <p>Helping businesses establish strong digital presence and convert visitors into customers.</p>
+      <a href="/services.html" class="cta-button">View Our Services</a>
+    </div>
+  </main>
 </body>
 </html>
