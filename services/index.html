@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - FlowTech Digital Solutions</title>
+    <meta name="description" content="Professional digital solutions at bootstrap-friendly prices. Website design, SEO, and digital marketing for small businesses.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .service-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .badge-starter {
+            background: #fbbf24;
+            color: #78350f;
+        }
+        
+        .badge-growth {
+            background: #34d399;
+            color: #065f46;
+        }
+        
+        .badge-premium {
+            background: #a78bfa;
+            color: #4c1d95;
+        }
+        
+        .service-card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: #1e3a8a;
+        }
+        
+        .service-subtitle {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pricing {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: #f3f4f6;
+            border-radius: 8px;
+        }
+        
+        .price-setup {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-monthly {
+            font-size: 1.25rem;
+            color: #4b5563;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            text-align: center;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            background: #1e40af;
+        }
+        
+        .comparison-section {
+            background: white;
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .comparison-table th {
+            background: #1e3a8a;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .comparison-table {
+                font-size: 0.875rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">FlowTech Digital Solutions</div>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/services">Services</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Digital Solutions at Bootstrap-Friendly Prices</h1>
+            <p>Website design, SEO, and digital marketing packages designed for small businesses ready to grow</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="services-grid">
+            <!-- Starter Package -->
+            <div class="service-card">
+                <span class="service-badge badge-starter">🥉 STARTER</span>
+                <h2>Digital Presence Essentials</h2>
+                <p class="service-subtitle">Perfect for solopreneurs and service businesses launching online</p>
+                
+                <div class="pricing">
+                    <div class="price-setup">$997 Setup</div>
+                    <div class="price-monthly">$197/month</div>
+                    <small style="color: #6b7280;">3-month minimum commitment</small>
+                </div>
+                
+                <ul class="features-list">
+                    <li>Professional 5-page website</li>
+                    <li>Google Business Profile optimization</li>
+                    <li>Basic SEO foundation</li>
+                    <li>CloudFlare hosting & security</li>
+                    <li>1 content update per month</li>
+                    <li>Monthly performance report</li>
+                    <li>Email support (48-hour response)</li>
+                </ul>
+                
+                <strong style="display: block; margin: 1rem 0; color: #1e3a8a;">Delivery: 5-7 business days</strong>
+                
+                <a href="/services/starter" class="cta-button">Learn More →</a>
+            </div>
+
+            <!-- Growth Package -->
+            <div class="service-card">
+                <span class="service-badge badge-growth">🥈 GROWTH</span>
+                <h2>Digital Marketing Accelerator</h2>
+                <p class="service-subtitle">For established small businesses ready to scale online</p>
+                
+                <div class="pricing">
+                    <div class="price-setup">$1,997 Setup</div>
+                    <div class="price-monthly">$497/month</div>
+                    <small style="color: #6b7280;">6-month minimum commitment</small>
+                </div>
+                
+                <ul class="features-list">
+                    <li>Professional 10-page website</li>
+                    <li>Comprehensive SEO strategy</li>
+                    <li>2 SEO-optimized blog posts/month</li>
+                    <li>Social media (2 posts/week)</li>
+                    <li>Email newsletter (1/month)</li>
+                    <li>3 website updates per month</li>
+                    <li>Priority support (24-hour response)</li>
+                </ul>
+                
+                <strong style="display: block; margin: 1rem 0; color: #1e3a8a;">Delivery: 7-10 business days</strong>
+                
+                <a href="/services/growth" class="cta-button">Learn More →</a>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="service-card">
+                <span class="service-badge badge-premium">🥇 PREMIUM</span>
+                <h2>Full-Service Digital Operations</h2>
+                <p class="service-subtitle">Complete digital presence outsourcing for established businesses</p>
+                
+                <div class="pricing">
+                    <div class="price-setup">$4,997 Setup</div>
+                    <div class="price-monthly">$997/month</div>
+                    <small style="color: #6b7280;">12-month minimum commitment</small>
+                </div>
+                
+                <ul class="features-list">
+                    <li>Custom 15+ page website</li>
+                    <li>E-commerce & booking systems</li>
+                    <li>4 SEO blog posts/month</li>
+                    <li>Social media (5 posts/week)</li>
+                    <li>Weekly email marketing</li>
+                    <li>PPC campaign management</li>
+                    <li>Monthly strategy consultation</li>
+                    <li>VIP support (4-hour response)</li>
+                </ul>
+                
+                <strong style="display: block; margin: 1rem 0; color: #1e3a8a;">Delivery: 10-14 business days</strong>
+                
+                <a href="/services/premium" class="cta-button">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #1e3a8a;">Compare Our Packages</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Starter</th>
+                        <th>Growth</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Website Pages</strong></td>
+                        <td>5 pages</td>
+                        <td>10 pages</td>
+                        <td>15+ pages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SEO Service</strong></td>
+                        <td>Basic foundation</td>
+                        <td>Comprehensive strategy</td>
+                        <td>Advanced + PPC</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Content Marketing</strong></td>
+                        <td>—</td>
+                        <td>2 blog posts/month</td>
+                        <td>4 blog posts/month</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Social Media</strong></td>
+                        <td>—</td>
+                        <td>2 posts/week</td>
+                        <td>5 posts/week</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email Marketing</strong></td>
+                        <td>—</td>
+                        <td>1 newsletter/month</td>
+                        <td>4 emails/month</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monthly Updates</strong></td>
+                        <td>1 update</td>
+                        <td>3 updates</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support Response</strong></td>
+                        <td>48 hours</td>
+                        <td>24 hours</td>
+                        <td>4 hours (VIP)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Setup Investment</strong></td>
+                        <td><strong>$997</strong></td>
+                        <td><strong>$1,997</strong></td>
+                        <td><strong>$4,997</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monthly Investment</strong></td>
+                        <td><strong>$197/mo</strong></td>
+                        <td><strong>$497/mo</strong></td>
+                        <td><strong>$997/mo</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.25rem; color: #4b5563; margin-bottom: 1rem;">Not sure which package is right for you?</p>
+                <!-- Intake Form Integration -->
+                <a href="/intake-form" class="cta-button" style="display: inline-block; width: auto;">Schedule Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FlowTech Digital Solutions. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Professional digital solutions at bootstrap-friendly prices</p>
+        </div>
+    </footer>
+</body>
+</html>
