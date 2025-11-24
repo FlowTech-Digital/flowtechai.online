@@ -55,31 +55,17 @@
   <!-- Brand CSS Variables -->
   <style>
     :root {
-      /* FlowTech AI Brand Colors (Brand Sheet v1.0) */
       --ft-azure: #1E78FF;
       --ft-obsidian: #0B1114;
       --ft-indigo: #1B3B93;
       --ft-white: #FFFFFF;
       --ft-gray-light: #F5F5F5;
       --ft-gray-dark: #333333;
-      
-      /* Typography */
       --ft-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --ft-font-heading: 'Space Grotesk', var(--ft-font-primary);
-      
-      /* Spacing */
-      --ft-spacing-xs: 0.5rem;
-      --ft-spacing-sm: 1rem;
-      --ft-spacing-md: 2rem;
-      --ft-spacing-lg: 4rem;
-      --ft-spacing-xl: 6rem;
     }
     
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
       font-family: var(--ft-font-primary);
@@ -88,7 +74,6 @@
       line-height: 1.6;
     }
     
-    /* Navigation */
     nav {
       position: fixed;
       top: 0;
@@ -130,9 +115,7 @@
       transition: color 0.3s;
     }
     
-    .nav-links a:hover {
-      color: var(--ft-azure);
-    }
+    .nav-links a:hover { color: var(--ft-azure); }
     
     .hero {
       min-height: 100vh;
@@ -145,28 +128,28 @@
     
     .hero-content {
       text-align: center;
-      padding: var(--ft-spacing-md);
+      padding: 2rem;
     }
     
     .hero-logo {
       max-width: 600px;
       width: 100%;
       height: auto;
-      margin-bottom: var(--ft-spacing-md);
+      margin-bottom: 2rem;
     }
     
     h1 {
       font-family: var(--ft-font-heading);
       font-size: clamp(2rem, 5vw, 4rem);
       color: var(--ft-azure);
-      margin-bottom: var(--ft-spacing-sm);
+      margin-bottom: 1rem;
     }
     
     p {
       font-size: clamp(1rem, 2vw, 1.5rem);
       color: var(--ft-gray-light);
       max-width: 800px;
-      margin: 0 auto var(--ft-spacing-md);
+      margin: 0 auto 2rem;
     }
     
     .cta-button {
@@ -179,7 +162,7 @@
       font-weight: 600;
       font-size: 1.1rem;
       transition: all 0.3s;
-      margin-top: var(--ft-spacing-sm);
+      margin-top: 1rem;
     }
     
     .cta-button:hover {
@@ -187,39 +170,57 @@
       box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3);
     }
     
+    footer {
+      background: rgba(11, 17, 20, 0.95);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(30, 120, 255, 0.1);
+    }
+    
+    footer p {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer a {
+      color: var(--ft-azure);
+      text-decoration: none;
+    }
+    
+    footer a:hover { opacity: 0.8; }
+    
     @media (max-width: 768px) {
-      .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
-      }
-      
-      nav {
-        padding: 0.75rem 1rem;
-      }
+      .nav-links { gap: 1rem; font-size: 0.9rem; }
+      nav { padding: 0.75rem 1rem; }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <div class="nav-content">
       <a href="/" class="nav-logo">FlowTech Digital</a>
       <ul class="nav-links">
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="mailto:hello@flowtechai.online">Contact</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero -->
   <main class="hero">
     <div class="hero-content">
       <img src="/assets/brand/FlowTech_Logo_Transparent_4000.png" alt="FlowTech Digital Solutions" class="hero-logo">
       <h1>Web design, branding, and high-converting landing pages</h1>
       <p>Professional quality at competitive rates. Fast turnaround. Proven results.</p>
       <p>Helping businesses establish strong digital presence and convert visitors into customers.</p>
-      <a href="/services.html" class="cta-button">View Our Services</a>
+      <a href="/services/" class="cta-button">View Our Services</a>
     </div>
   </main>
+
+  <footer>
+    <p>&copy; 2025 FlowTech Digital Solutions. ABN 76 689 878 420</p>
+    <p><a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a> | <a href="mailto:hello@flowtechai.online">hello@flowtechai.online</a></p>
+  </footer>
 </body>
 </html>

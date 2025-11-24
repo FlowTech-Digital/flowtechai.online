@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FlowTech Digital Solutions</title>
+  <meta name="description" content="Get in touch with FlowTech Digital Solutions. Schedule a free consultation or send us a message.">
+  <link rel="icon" type="image/png" sizes="256x256" href="/assets/brand/flowtech-favicon-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ft-azure: #1E78FF;
+      --ft-obsidian: #0B1114;
+      --ft-indigo: #1B3B93;
+      --ft-white: #FFFFFF;
+      --ft-gray-light: #F5F5F5;
+      --ft-font-primary: 'Inter', -apple-system, sans-serif;
+      --ft-font-heading: 'Space Grotesk', var(--ft-font-primary);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--ft-font-primary); background: var(--ft-obsidian); color: var(--ft-white); line-height: 1.6; }
+    nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(11, 17, 20, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; z-index: 1000; border-bottom: 1px solid rgba(30, 120, 255, 0.1); }
+    .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: var(--ft-font-heading); font-size: 1.5rem; font-weight: 700; color: var(--ft-azure); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--ft-white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--ft-azure); }
+    .content { max-width: 800px; margin: 0 auto; padding: 8rem 2rem 4rem; }
+    h1 { font-family: var(--ft-font-heading); font-size: 2.5rem; color: var(--ft-azure); margin-bottom: 2rem; }
+    h2 { font-family: var(--ft-font-heading); font-size: 1.5rem; color: var(--ft-azure); margin: 2rem 0 1rem; }
+    p { color: var(--ft-gray-light); margin-bottom: 1.5rem; font-size: 1.1rem; }
+    .contact-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+    .contact-card { background: rgba(30, 120, 255, 0.1); padding: 2rem; border-radius: 12px; text-align: center; transition: transform 0.3s; }
+    .contact-card:hover { transform: translateY(-4px); }
+    .contact-card h3 { color: var(--ft-azure); margin-bottom: 1rem; font-size: 1.25rem; }
+    .contact-card p { font-size: 1rem; margin-bottom: 1rem; }
+    .contact-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .cta-button { display: inline-block; background: var(--ft-azure); color: var(--ft-white); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3); }
+    .email-link { color: var(--ft-azure); font-size: 1.25rem; font-weight: 600; text-decoration: none; }
+    .email-link:hover { text-decoration: underline; }
+    footer { background: rgba(11, 17, 20, 0.95); padding: 2rem; text-align: center; border-top: 1px solid rgba(30, 120, 255, 0.1); margin-top: 4rem; }
+    footer p { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem; }
+    footer a { color: var(--ft-azure); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <a href="/" class="nav-logo">FlowTech Digital</a>
+      <ul class="nav-links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Contact Us</h1>
+    
+    <p>Ready to start your project or have questions? We'd love to hear from you.</p>
+    
+    <div class="contact-options">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>Email Us</h3>
+        <p>For general inquiries and support</p>
+        <a href="mailto:hello@flowtechai.online" class="email-link">hello@flowtechai.online</a>
+      </div>
+      
+      <div class="contact-card">
+        <div class="icon">📋</div>
+        <h3>Free Consultation</h3>
+        <p>Tell us about your project and get a custom quote</p>
+        <a href="/intake-form/" class="cta-button">Start Project Intake</a>
+      </div>
+    </div>
+    
+    <h2>Business Details</h2>
+    <p><strong>FlowTech Digital Solutions</strong><br>
+A division of FlowTech AI PTY LTD<br>
+ABN: 76 689 878 420<br>
+Australia</p>
+    
+    <h2>Response Times</h2>
+    <p>We aim to respond to all inquiries within 24-48 hours during business days. For urgent matters, please indicate "URGENT" in your email subject line.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FlowTech Digital Solutions. ABN 76 689 878 420</p>
+    <p><a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a> | <a href="mailto:hello@flowtechai.online">hello@flowtechai.online</a></p>
+  </footer>
+</body>
+</html>

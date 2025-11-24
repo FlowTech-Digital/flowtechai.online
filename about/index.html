@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - FlowTech Digital Solutions</title>
+  <meta name="description" content="Learn about FlowTech Digital Solutions - professional digital services for small businesses at bootstrap-friendly prices.">
+  <link rel="icon" type="image/png" sizes="256x256" href="/assets/brand/flowtech-favicon-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ft-azure: #1E78FF;
+      --ft-obsidian: #0B1114;
+      --ft-indigo: #1B3B93;
+      --ft-white: #FFFFFF;
+      --ft-gray-light: #F5F5F5;
+      --ft-font-primary: 'Inter', -apple-system, sans-serif;
+      --ft-font-heading: 'Space Grotesk', var(--ft-font-primary);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--ft-font-primary); background: var(--ft-obsidian); color: var(--ft-white); line-height: 1.6; }
+    nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(11, 17, 20, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; z-index: 1000; border-bottom: 1px solid rgba(30, 120, 255, 0.1); }
+    .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: var(--ft-font-heading); font-size: 1.5rem; font-weight: 700; color: var(--ft-azure); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--ft-white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--ft-azure); }
+    .content { max-width: 800px; margin: 0 auto; padding: 8rem 2rem 4rem; }
+    h1 { font-family: var(--ft-font-heading); font-size: 2.5rem; color: var(--ft-azure); margin-bottom: 2rem; }
+    h2 { font-family: var(--ft-font-heading); font-size: 1.5rem; color: var(--ft-azure); margin: 2rem 0 1rem; }
+    p { color: var(--ft-gray-light); margin-bottom: 1.5rem; font-size: 1.1rem; }
+    .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .value-card { background: rgba(30, 120, 255, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--ft-azure); }
+    .value-card h3 { color: var(--ft-azure); margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .value-card p { font-size: 0.95rem; margin-bottom: 0; }
+    .cta-button { display: inline-block; background: var(--ft-azure); color: var(--ft-white); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 1rem; transition: all 0.3s; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3); }
+    footer { background: rgba(11, 17, 20, 0.95); padding: 2rem; text-align: center; border-top: 1px solid rgba(30, 120, 255, 0.1); }
+    footer p { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem; }
+    footer a { color: var(--ft-azure); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <a href="/" class="nav-logo">FlowTech Digital</a>
+      <ul class="nav-links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>About FlowTech Digital Solutions</h1>
+    
+    <p>FlowTech Digital Solutions is a division of FlowTech AI PTY LTD, focused on providing professional digital services to small businesses and solopreneurs at bootstrap-friendly prices.</p>
+    
+    <p>We understand that not every business needs enterprise-level solutions. That's why we've created tiered service packages that deliver real results without breaking the bank.</p>
+    
+    <h2>Our Mission</h2>
+    <p>To help small businesses establish a strong digital presence with professional quality websites, effective SEO, and strategic digital marketing—delivered fast and at competitive rates.</p>
+    
+    <h2>What Sets Us Apart</h2>
+    <div class="values">
+      <div class="value-card">
+        <h3>🚀 Fast Delivery</h3>
+        <p>Most projects completed in 5-14 business days, not months.</p>
+      </div>
+      <div class="value-card">
+        <h3>💰 Fair Pricing</h3>
+        <p>Bootstrap-friendly packages designed for small business budgets.</p>
+      </div>
+      <div class="value-card">
+        <h3>📈 Proven Results</h3>
+        <p>Focus on what matters: getting you leads and customers.</p>
+      </div>
+      <div class="value-card">
+        <h3>🤝 Personal Service</h3>
+        <p>Direct communication, no runaround. Real people, real support.</p>
+      </div>
+    </div>
+    
+    <h2>Ready to Get Started?</h2>
+    <p>Whether you're launching a new business or refreshing your online presence, we're here to help.</p>
+    <a href="/services/" class="cta-button">View Our Packages</a>
+    <a href="/intake-form/" class="cta-button" style="background: transparent; border: 2px solid var(--ft-azure); margin-left: 1rem;">Free Consultation</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FlowTech Digital Solutions. ABN 76 689 878 420</p>
+    <p><a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a> | <a href="mailto:hello@flowtechai.online">hello@flowtechai.online</a></p>
+  </footer>
+</body>
+</html>
