@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 a1fb9ed7dd9c245b5631c3af2c6dd2159a5a7dce Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1762660216 +1100	commit (initial): Complete flowtechai.online site deployment - 4 pages
+a1fb9ed7dd9c245b5631c3af2c6dd2159a5a7dce a1fb9ed7dd9c245b5631c3af2c6dd2159a5a7dce Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1762660732 +1100	Branch: renamed refs/heads/master to refs/heads/main
+a1fb9ed7dd9c245b5631c3af2c6dd2159a5a7dce 3d99c6d646e7664ea7c4cfda33215aa734a7e46c Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1763546926 +1100	commit: Add FlowTech logo asset for homepage
+3d99c6d646e7664ea7c4cfda33215aa734a7e46c 7a4054a452c21d4e8e53fab0a600365375073fc6 Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1763548899 +1100	commit (merge): Merge: Add brand assets and update sample pages
+7a4054a452c21d4e8e53fab0a600365375073fc6 d366fc462a48f7ffc004b4fe2775d347d7ec6bbb Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1763549525 +1100	commit: Update: Local index.html changes
+d366fc462a48f7ffc004b4fe2775d347d7ec6bbb f7c14c690a33693b6978da15a892dd9f73f92f38 Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1763549528 +1100	pull origin main --allow-unrelated-histories: Merge made by the 'ort' strategy.
+f7c14c690a33693b6978da15a892dd9f73f92f38 65e110b6c80f761e3c1cf171c4819064725f1302 Vincent Pedavoli <vincent.pedavoli@flowtechai.com.au> 1763550582 +1100	reset: moving to 65e110b
