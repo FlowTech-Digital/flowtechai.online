@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics 4 - FlowTech Digital Solutions -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCTZN504HW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);};
+      gtag('js', new Date());
+      
+      gtag('config', 'G-PCTZN504HW', {
+        'send_page_view': true
+      });
+    </script>
+    <!-- End Google Analytics 4 -->
+    
     <title>Starter Package - Digital Presence Essentials | FlowTech Digital Solutions</title>
     <meta name="description" content="$997 setup + $197/month. Professional 5-page website, Google Business Profile, and basic SEO for solopreneurs and service businesses launching online.">
     <link rel="icon" type="image/png" sizes="256x256" href="/assets/brand/flowtech-favicon-256.png">
@@ -29,7 +43,6 @@
         body { font-family: var(--font-primary); background: var(--ft-obsidian); color: var(--ft-white); line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         
-        /* Navigation */
         nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(11, 17, 20, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; z-index: 1000; border-bottom: 1px solid rgba(30, 120, 255, 0.1); }
         .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
         .nav-logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--ft-azure); text-decoration: none; }
@@ -37,7 +50,6 @@
         .nav-links a { color: var(--ft-white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover { color: var(--ft-azure); }
         
-        /* Hero */
         .hero { background: linear-gradient(135deg, var(--badge-starter) 0%, var(--badge-starter-dark) 100%); color: var(--badge-starter-text); padding: 8rem 0 6rem; text-align: center; }
         .badge { display: inline-block; background: rgba(120, 53, 15, 0.15); padding: 0.5rem 1.5rem; border-radius: 9999px; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.875rem; }
         .hero h1 { font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; }
@@ -49,7 +61,6 @@
         .cta-primary { display: inline-block; background: var(--ft-azure); color: white; padding: 1.25rem 3rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 1.125rem; margin-top: 2rem; transition: all 0.3s; box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3); }
         .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(30, 120, 255, 0.4); }
         
-        /* Content Sections */
         .content-section { padding: 5rem 0; }
         .section-header { text-align: center; margin-bottom: 3rem; }
         .section-header h2 { font-family: var(--font-heading); font-size: 2rem; color: var(--ft-azure); margin-bottom: 1rem; }
@@ -63,7 +74,6 @@
         .feature-list li { padding: 0.5rem 0; padding-left: 1.75rem; position: relative; color: var(--ft-gray-light); }
         .feature-list li:before { content: "✓"; position: absolute; left: 0; color: var(--success); font-weight: 700; }
         
-        /* Details Section */
         .details-section { background: rgba(30, 120, 255, 0.03); padding: 5rem 0; }
         .detail-box { background: var(--ft-obsidian); border: 1px solid rgba(30, 120, 255, 0.2); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; }
         .detail-box h3 { color: var(--ft-azure); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: var(--font-heading); }
@@ -74,7 +84,6 @@
         .timeline-item p { color: var(--ft-gray-light); font-size: 0.9rem; }
         .timeline-item strong { color: var(--ft-white); }
         
-        /* Ideal For Section */
         .ideal-section { padding: 5rem 0; }
         .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
         .profile-card { background: linear-gradient(135deg, var(--badge-starter) 0%, var(--badge-starter-dark) 100%); color: var(--badge-starter-text); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s; }
@@ -83,14 +92,12 @@
         .profile-card h4 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
         .profile-card p { font-size: 0.9rem; opacity: 0.9; }
         
-        /* FAQ */
         .faq-section { background: rgba(30, 120, 255, 0.03); padding: 5rem 0; }
         .faq-item { background: var(--ft-obsidian); border: 1px solid rgba(30, 120, 255, 0.15); border-radius: 12px; padding: 1.75rem; margin-bottom: 1rem; transition: all 0.3s; }
         .faq-item:hover { border-color: rgba(30, 120, 255, 0.4); }
         .faq-question { color: var(--ft-white); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.75rem; }
         .faq-answer { color: var(--ft-gray-light); line-height: 1.7; }
         
-        /* CTA Section */
         .cta-section { background: linear-gradient(135deg, var(--ft-indigo) 0%, var(--ft-azure) 100%); padding: 5rem 0; text-align: center; }
         .cta-section h2 { font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem; }
         .cta-section p { font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95; }
@@ -100,7 +107,6 @@
         .cta-button-secondary { background: transparent; color: white; border: 2px solid white; }
         .cta-button-secondary:hover { background: white; color: var(--ft-azure); }
         
-        /* Footer */
         footer { background: rgba(11, 17, 20, 0.95); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(30, 120, 255, 0.1); }
         footer p { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem; }
         footer a { color: var(--ft-azure); text-decoration: none; }
