@@ -3,224 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Analytics 4 - FlowTech Digital Solutions -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCTZN504HW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);};
-      gtag('js', new Date());
-      
-      gtag('config', 'G-PCTZN504HW', {
-        'send_page_view': true
-      });
-    </script>
-    <!-- End Google Analytics 4 -->
-    
     <title>Growth Package - Digital Marketing Accelerator | FlowTech Digital Solutions</title>
-    <meta name="description" content="$1,997 setup + $497/month. Professional 10-page website, comprehensive SEO, social media management, and email marketing for growing businesses.">
-    <link rel="icon" type="image/png" sizes="256x256" href="/assets/brand/flowtech-favicon-256.png">
+    <meta name="description" content="$1,997 setup + $497/month. Professional 10-page website, comprehensive SEO, content marketing, and social media for scaling businesses.">
+    
+    <!-- Google Fonts - Inter (Premium Typography) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5CR0RS960"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W5CR0RS960');
+    </script>
     
     <style>
         :root {
-            --ft-azure: #1E78FF;
-            --ft-obsidian: #0B1114;
-            --ft-indigo: #1B3B93;
-            --ft-white: #FFFFFF;
-            --ft-gray-light: #F5F5F5;
-            --ft-gray-dark: #333333;
+            --brand-primary: #667eea;
+            --brand-primary-dark: #5145cd;
             --badge-growth: #34d399;
             --badge-growth-dark: #10b981;
             --badge-growth-text: #065f46;
             --success: #10b981;
-            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-heading: 'Space Grotesk', var(--font-primary);
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-brand: 0 10px 25px -5px rgba(102, 126, 234, 0.2);
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-full: 9999px;
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-primary); background: var(--ft-obsidian); color: var(--ft-white); line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        body { font-family: var(--font-primary); line-height: 1.6; color: var(--gray-600); background: var(--gray-50); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-8); }
         
-        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(11, 17, 20, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; z-index: 1000; border-bottom: 1px solid rgba(30, 120, 255, 0.1); }
-        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--ft-azure); text-decoration: none; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { color: var(--ft-white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        .nav-links a:hover { color: var(--ft-azure); }
+        header { background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%); color: white; padding: 1rem 0; box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 1000; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo-link { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+        .logo-image { height: 40px; width: 40px; border-radius: 8px; }
+        .logo-text { font-size: 1.25rem; font-weight: 700; color: white; }
+        nav a { color: white; text-decoration: none; margin-left: 2rem; font-weight: 500; transition: opacity 150ms; }
+        nav a:hover { opacity: 0.8; }
         
-        .hero { background: linear-gradient(135deg, var(--badge-growth) 0%, var(--badge-growth-dark) 100%); color: var(--badge-growth-text); padding: 8rem 0 6rem; text-align: center; }
-        .badge { display: inline-block; background: rgba(6, 95, 70, 0.15); padding: 0.5rem 1.5rem; border-radius: 9999px; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.875rem; }
-        .popular-tag { background: var(--ft-azure); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; vertical-align: middle; }
-        .hero h1 { font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; }
-        .hero .subtitle { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .pricing-hero { background: white; border-radius: 16px; padding: 2rem 3rem; display: inline-block; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
-        .price-setup { font-size: 2.5rem; font-weight: 800; color: var(--ft-azure); margin-bottom: 0.25rem; }
-        .price-monthly { font-size: 1.5rem; font-weight: 600; color: var(--ft-gray-dark); margin-bottom: 0.5rem; }
-        .price-note { color: #6b7280; font-size: 0.9rem; }
-        .cta-primary { display: inline-block; background: var(--ft-azure); color: white; padding: 1.25rem 3rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 1.125rem; margin-top: 2rem; transition: all 0.3s; box-shadow: 0 8px 20px rgba(30, 120, 255, 0.3); }
-        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(30, 120, 255, 0.4); }
+        .hero { background: linear-gradient(135deg, var(--badge-growth) 0%, var(--badge-growth-dark) 100%); color: var(--badge-growth-text); padding: 6rem 0; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('/Brand_Assets/FlowTech_Digital_Solutions/web/hero-light-2400w.png'); background-size: cover; background-position: center; opacity: 0.06; z-index: 0; }
+        .hero-content { position: relative; z-index: 1; }
+        .badge { display: inline-block; background: rgba(6, 95, 70, 0.15); padding: 0.5rem 1.5rem; border-radius: var(--radius-full); font-weight: 600; margin-bottom: 1rem; font-size: 0.875rem; }
+        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.2; }
+        .hero .subtitle { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; }
+        .pricing-hero { background: white; border-radius: var(--radius-lg); padding: 2rem; display: inline-block; box-shadow: var(--shadow-lg); margin-top: 1rem; }
+        .price-setup { font-size: 2rem; font-weight: 700; color: var(--brand-primary); margin-bottom: 0.5rem; }
+        .price-monthly { font-size: 1.5rem; font-weight: 600; color: var(--gray-600); margin-bottom: 0.5rem; }
+        .price-note { color: var(--gray-500); font-size: 0.875rem; }
+        .cta-primary { display: inline-block; background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%); color: white; padding: 1.25rem 3rem; border-radius: var(--radius-md); text-decoration: none; font-weight: 600; font-size: 1.125rem; margin-top: 1.5rem; transition: all var(--transition-base); box-shadow: var(--shadow-md); }
+        .cta-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-brand); }
         
-        .content-section { padding: 5rem 0; }
+        .content-section { background: white; padding: var(--space-16) 0; }
         .section-header { text-align: center; margin-bottom: 3rem; }
-        .section-header h2 { font-family: var(--font-heading); font-size: 2rem; color: var(--ft-azure); margin-bottom: 1rem; }
-        .section-header p { font-size: 1.125rem; color: var(--ft-gray-light); opacity: 0.8; }
-        
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-        .feature-card { background: rgba(30, 120, 255, 0.05); border: 1px solid rgba(30, 120, 255, 0.1); border-radius: 16px; padding: 2rem; border-left: 4px solid var(--badge-growth); transition: all 0.3s; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(30, 120, 255, 0.1); border-color: rgba(30, 120, 255, 0.3); }
-        .feature-card h3 { color: var(--ft-azure); margin-bottom: 1rem; font-size: 1.25rem; font-weight: 700; }
-        .feature-list { list-style: none; }
-        .feature-list li { padding: 0.5rem 0; padding-left: 1.75rem; position: relative; color: var(--ft-gray-light); }
+        .section-header h2 { font-size: 2rem; font-weight: 700; color: var(--gray-800); margin-bottom: 1rem; }
+        .section-header p { font-size: 1.125rem; color: var(--gray-500); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .feature-card { background: var(--gray-50); border-radius: var(--radius-lg); padding: 2rem; border-left: 4px solid var(--badge-growth); transition: all var(--transition-base); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .feature-card h3 { color: var(--gray-800); margin-bottom: 1rem; font-size: 1.25rem; font-weight: 600; }
+        .feature-list { list-style: none; margin: 1rem 0; }
+        .feature-list li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-600); }
         .feature-list li:before { content: "✓"; position: absolute; left: 0; color: var(--success); font-weight: 700; }
         
-        .details-section { background: rgba(30, 120, 255, 0.03); padding: 5rem 0; }
-        .detail-box { background: var(--ft-obsidian); border: 1px solid rgba(30, 120, 255, 0.2); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; }
-        .detail-box h3 { color: var(--ft-azure); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: var(--font-heading); }
-        
+        .details-section { background: var(--gray-50); padding: var(--space-16) 0; }
+        .detail-box { background: white; border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-md); }
+        .detail-box h3 { color: var(--gray-800); margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700; }
         .timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
-        .timeline-item { text-align: center; padding: 1.5rem; background: rgba(30, 120, 255, 0.05); border-radius: 12px; }
-        .timeline-day { background: var(--badge-growth); color: var(--badge-growth-text); font-weight: 800; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1rem; }
-        .timeline-item p { color: var(--ft-gray-light); font-size: 0.9rem; }
-        .timeline-item strong { color: var(--ft-white); }
+        .timeline-item { text-align: center; }
+        .timeline-day { background: var(--badge-growth); color: var(--badge-growth-text); font-weight: 700; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.125rem; }
+        .timeline-item p { color: var(--gray-600); font-size: 0.875rem; }
         
-        .comparison-section { padding: 5rem 0; }
-        .comparison-box { background: rgba(52, 211, 153, 0.1); border: 2px solid var(--badge-growth); border-radius: 16px; padding: 2.5rem; }
-        .comparison-box h3 { color: var(--badge-growth); margin-bottom: 1.5rem; font-size: 1.25rem; font-family: var(--font-heading); }
-        .vs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .vs-column h4 { color: var(--ft-white); margin-bottom: 1rem; font-size: 1.1rem; }
-        .vs-column ul { list-style: none; }
-        .vs-column li { padding: 0.4rem 0; color: var(--ft-gray-light); padding-left: 1.5rem; position: relative; }
-        .vs-column li:before { position: absolute; left: 0; }
-        .vs-column.starter li:before { content: "→"; color: #fbbf24; }
-        .vs-column.growth li:before { content: "★"; color: var(--badge-growth); }
+        .ideal-for-section { background: white; padding: var(--space-16) 0; }
+        .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .profile-card { background: linear-gradient(135deg, var(--badge-growth) 0%, var(--badge-growth-dark) 100%); color: var(--badge-growth-text); border-radius: var(--radius-lg); padding: 2rem; text-align: center; box-shadow: var(--shadow-md); transition: all var(--transition-base); }
+        .profile-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .profile-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .profile-card h4 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .profile-card p { font-size: 0.875rem; opacity: 0.9; }
         
-        .faq-section { background: rgba(30, 120, 255, 0.03); padding: 5rem 0; }
-        .faq-item { background: var(--ft-obsidian); border: 1px solid rgba(30, 120, 255, 0.15); border-radius: 12px; padding: 1.75rem; margin-bottom: 1rem; transition: all 0.3s; }
-        .faq-item:hover { border-color: rgba(30, 120, 255, 0.4); }
-        .faq-question { color: var(--ft-white); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.75rem; }
-        .faq-answer { color: var(--ft-gray-light); line-height: 1.7; }
+        .faq-section { background: var(--gray-50); padding: var(--space-16) 0; }
+        .faq-item { background: white; border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1rem; box-shadow: var(--shadow-md); transition: all var(--transition-base); }
+        .faq-item:hover { box-shadow: var(--shadow-lg); }
+        .faq-question { color: var(--gray-800); font-weight: 600; font-size: 1.125rem; margin-bottom: 0.75rem; }
+        .faq-answer { color: var(--gray-600); line-height: 1.6; }
         
-        .cta-section { background: linear-gradient(135deg, var(--ft-indigo) 0%, var(--ft-azure) 100%); padding: 5rem 0; text-align: center; }
-        .cta-section h2 { font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section { background: linear-gradient(135deg, var(--brand-primary) 0%, #764ba2 100%); color: white; padding: var(--space-16) 0; text-align: center; }
+        .cta-section h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
         .cta-section p { font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95; }
         .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-        .cta-button { display: inline-block; background: white; color: var(--ft-azure); padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,255,255,0.2); }
+        .cta-button { display: inline-block; background: white; color: var(--brand-primary); padding: 1rem 2rem; border-radius: var(--radius-md); text-decoration: none; font-weight: 600; transition: all var(--transition-base); box-shadow: var(--shadow-md); }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
         .cta-button-secondary { background: transparent; color: white; border: 2px solid white; }
-        .cta-button-secondary:hover { background: white; color: var(--ft-azure); }
+        .cta-button-secondary:hover { background: white; color: var(--brand-primary); }
         
-        footer { background: rgba(11, 17, 20, 0.95); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(30, 120, 255, 0.1); }
-        footer p { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem; }
-        footer a { color: var(--ft-azure); text-decoration: none; }
-        .footer-nav { margin-top: 1rem; }
-        .footer-nav a { margin: 0 1rem; }
+        footer { background: var(--gray-900); color: var(--gray-500); padding: 3rem 0; text-align: center; }
+        footer a { color: var(--brand-primary); text-decoration: none; transition: opacity 150ms; }
+        footer a:hover { opacity: 0.8; }
         
         @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero { padding: 7rem 0 4rem; }
             .hero h1 { font-size: 2rem; }
-            .pricing-hero { padding: 1.5rem 2rem; }
+            .hero { padding: 4rem 0; }
+            nav { display: none; }
             .cta-buttons { flex-direction: column; align-items: center; }
+            .container { padding: 0 1rem; }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <a href="/" class="nav-logo">FlowTech Digital</a>
-            <ul class="nav-links">
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo-link">
+                    <img src="/Brand_Assets/FlowTech_Digital_Solutions/web/icon-192.png" alt="FlowTech Digital Solutions" class="logo-image" />
+                    <span class="logo-text">FlowTech Digital Solutions</span>
+                </a>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/services">Services</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <section class="hero">
         <div class="container">
-            <div class="badge">🥈 GROWTH PACKAGE <span class="popular-tag">MOST POPULAR</span></div>
-            <h1>Digital Marketing Accelerator</h1>
-            <p class="subtitle">For established small businesses ready to scale their online presence</p>
-            
-            <div class="pricing-hero">
-                <div class="price-setup">$1,997 Setup</div>
-                <div class="price-monthly">$497/month</div>
-                <div class="price-note">6-month minimum commitment</div>
+            <div class="hero-content">
+                <div class="badge">🥈 GROWTH PACKAGE</div>
+                <h1>Digital Marketing Accelerator</h1>
+                <p class="subtitle">For established small businesses ready to scale online</p>
+                <div class="pricing-hero">
+                    <div class="price-setup">$1,997 Setup Fee</div>
+                    <div class="price-monthly">$497 per month</div>
+                    <div class="price-note">6-month minimum commitment</div>
+                </div>
+                <a href="https://buy.stripe.com/eVq00lbnKdQW4Yn6jv93y01" class="cta-primary">Get Started Now</a>
             </div>
-            
-            <a href="https://buy.stripe.com/eVq00lbnKdQW4Yn6jv93y01" class="cta-primary">Get Started Now →</a>
         </div>
     </section>
 
     <section class="content-section">
         <div class="container">
             <div class="section-header">
-                <h2>Everything in Starter, Plus</h2>
-                <p>A complete digital marketing ecosystem to accelerate your growth</p>
+                <h2>What You Get</h2>
+                <p>Comprehensive digital marketing solution for scaling businesses</p>
             </div>
-            
             <div class="features-grid">
                 <div class="feature-card">
                     <h3>🌐 Professional 10-Page Website</h3>
                     <ul class="feature-list">
-                        <li>Double the pages of Starter</li>
-                        <li>Service/product detail pages</li>
-                        <li>Blog with SEO-optimized posts</li>
-                        <li>Testimonials & case studies</li>
-                        <li>Lead capture forms</li>
+                        <li>Custom design tailored to your brand</li>
+                        <li>Full mobile responsiveness</li>
+                        <li>Advanced contact and lead forms</li>
+                        <li>Service pages with detailed offerings</li>
+                        <li>Blog platform with CMS integration</li>
+                        <li>CloudFlare hosting & security</li>
                     </ul>
                 </div>
-                
                 <div class="feature-card">
                     <h3>🔍 Comprehensive SEO Strategy</h3>
                     <ul class="feature-list">
-                        <li>25 target keywords (vs 10)</li>
-                        <li>Technical SEO audit & fixes</li>
-                        <li>Local SEO optimization</li>
+                        <li>In-depth keyword research (30+ terms)</li>
+                        <li>Technical SEO optimization</li>
+                        <li>Competitor analysis & positioning</li>
+                        <li>Local SEO for service areas</li>
                         <li>Monthly ranking reports</li>
-                        <li>Competitor analysis</li>
+                        <li>Ongoing optimization adjustments</li>
                     </ul>
                 </div>
-                
                 <div class="feature-card">
-                    <h3>📝 Content Marketing</h3>
+                    <h3>✍️ Content Marketing</h3>
                     <ul class="feature-list">
-                        <li>2 SEO blog posts per month</li>
-                        <li>Keyword-targeted content</li>
+                        <li>2 SEO-optimized blog posts per month</li>
+                        <li>Keyword-targeted writing</li>
+                        <li>Professional editing & proofreading</li>
+                        <li>Featured images & formatting</li>
                         <li>Internal linking strategy</li>
-                        <li>Content calendar</li>
                     </ul>
                 </div>
-                
                 <div class="feature-card">
                     <h3>📱 Social Media Management</h3>
                     <ul class="feature-list">
-                        <li>2 posts per week (8/month)</li>
-                        <li>2 platforms of your choice</li>
-                        <li>Branded graphics</li>
+                        <li>2 posts per week (8-10/month)</li>
+                        <li>Custom graphics & content</li>
+                        <li>Facebook & Instagram coverage</li>
                         <li>Engagement monitoring</li>
+                        <li>Monthly analytics report</li>
                     </ul>
                 </div>
-                
                 <div class="feature-card">
                     <h3>📧 Email Marketing</h3>
                     <ul class="feature-list">
-                        <li>1 newsletter per month</li>
-                        <li>Email template design</li>
-                        <li>Subscriber management</li>
-                        <li>Performance tracking</li>
+                        <li>Monthly newsletter campaign</li>
+                        <li>Email list management</li>
+                        <li>Template design & setup</li>
+                        <li>Campaign performance tracking</li>
+                        <li>Audience segmentation basics</li>
                     </ul>
                 </div>
-                
                 <div class="feature-card">
-                    <h3>⚡ Priority Support</h3>
+                    <h3>🛠️ Ongoing Management</h3>
                     <ul class="feature-list">
-                        <li>24-hour response time</li>
                         <li>3 website updates per month</li>
-                        <li>Quarterly strategy call</li>
-                        <li>Dedicated account manager</li>
+                        <li>Priority support (24-hour response)</li>
+                        <li>Google Analytics monitoring</li>
+                        <li>Lead tracking & reporting</li>
+                        <li>Strategy adjustments</li>
                     </ul>
                 </div>
             </div>
@@ -233,53 +242,68 @@
                 <h3>📅 Delivery Timeline: 7-10 Business Days</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-day">1-2</div>
-                        <p><strong>Discovery & Strategy</strong><br>Deep-dive into your business goals</p>
+                        <div class="timeline-day">Day 1-2</div>
+                        <p><strong>Discovery & Strategy</strong><br>Brand audit, competitive analysis, content planning</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-day">3-5</div>
-                        <p><strong>Design & Development</strong><br>Build your 10-page website</p>
+                        <div class="timeline-day">Day 3-5</div>
+                        <p><strong>Website Development</strong><br>Design & build 10-page site with custom features</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-day">6-8</div>
-                        <p><strong>Content & SEO</strong><br>Optimize all content & setup</p>
+                        <div class="timeline-day">Day 6-7</div>
+                        <p><strong>SEO & Content</strong><br>Keyword research, on-page optimization, first blog post</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-day">9-10</div>
-                        <p><strong>Launch & Training</strong><br>Go live with full handover</p>
+                        <div class="timeline-day">Day 8-9</div>
+                        <p><strong>Social & Email Setup</strong><br>Profile optimization, template creation, scheduling</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">Day 10</div>
+                        <p><strong>Launch & Training</strong><br>Go live, team training, campaign kickoff</p>
                     </div>
                 </div>
+            </div>
+            <div class="detail-box">
+                <h3>🔄 Ongoing Monthly Services ($497/month)</h3>
+                <ul class="feature-list">
+                    <li><strong>Content Creation</strong> - 2 blog posts (600-800 words each) optimized for SEO</li>
+                    <li><strong>Social Media</strong> - 8-10 posts per month with custom graphics</li>
+                    <li><strong>Email Marketing</strong> - 1 newsletter campaign with design & copy</li>
+                    <li><strong>Website Updates</strong> - 3 content updates or changes per month</li>
+                    <li><strong>SEO Monitoring</strong> - Keyword tracking, ranking reports, optimization</li>
+                    <li><strong>Analytics Reporting</strong> - Monthly performance dashboard with insights</li>
+                    <li><strong>Priority Support</strong> - 24-hour response time via email</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="comparison-section">
+    <section class="ideal-for-section">
         <div class="container">
-            <div class="comparison-box">
-                <h3>📊 Starter vs Growth: What's the Difference?</h3>
-                <div class="vs-grid">
-                    <div class="vs-column starter">
-                        <h4>Starter ($197/mo)</h4>
-                        <ul>
-                            <li>5-page website</li>
-                            <li>Basic SEO (10 keywords)</li>
-                            <li>No content marketing</li>
-                            <li>No social media</li>
-                            <li>No email marketing</li>
-                            <li>48-hour support</li>
-                        </ul>
-                    </div>
-                    <div class="vs-column growth">
-                        <h4>Growth ($497/mo)</h4>
-                        <ul>
-                            <li>10-page website with blog</li>
-                            <li>Comprehensive SEO (25 keywords)</li>
-                            <li>2 blog posts per month</li>
-                            <li>2 posts/week social media</li>
-                            <li>Monthly newsletter</li>
-                            <li>24-hour priority support</li>
-                        </ul>
-                    </div>
+            <div class="section-header">
+                <h2>Perfect For</h2>
+                <p>This package is specifically designed for:</p>
+            </div>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <div class="profile-icon">📈</div>
+                    <h4>Scaling Service Businesses</h4>
+                    <p>Established contractors, consultants, or service providers ready to grow beyond word-of-mouth</p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-icon">🏪</div>
+                    <h4>Local Retailers</h4>
+                    <p>Shops and stores expanding online presence with regular content and social engagement</p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-icon">🎯</div>
+                    <h4>B2B Companies</h4>
+                    <p>Professional services firms needing consistent content marketing and lead generation</p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-icon">💼</div>
+                    <h4>Multi-Location Businesses</h4>
+                    <p>Companies with 2-5 locations wanting centralized digital marketing management</p>
                 </div>
             </div>
         </div>
@@ -290,45 +314,55 @@
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
             </div>
-            
             <div class="faq-item">
-                <div class="faq-question">Why is there a 6-month minimum?</div>
-                <div class="faq-answer">SEO and content marketing need 3-6 months to show meaningful results. Our 6-month commitment ensures you see the full ROI of our comprehensive strategy before deciding to continue.</div>
+                <div class="faq-question">Q: Why is there a 6-month minimum commitment?</div>
+                <div class="faq-answer">A: Digital marketing takes 3-6 months to show meaningful ROI. Our 6-month minimum ensures you benefit from compounding SEO effects, content library growth, and audience building - not just initial setup.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Which social media platforms do you support?</div>
-                <div class="faq-answer">We support Facebook, Instagram, LinkedIn, and Twitter/X. You choose the 2 platforms most relevant to your audience, and we'll create tailored content for each.</div>
+                <div class="faq-question">Q: What happens after 6 months?</div>
+                <div class="faq-answer">A: Your monthly service continues month-to-month. Cancel with 30 days notice anytime after the initial 6-month period. Your website, content, and audience remain yours.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Can I provide input on blog topics?</div>
-                <div class="faq-answer">Absolutely! We combine your industry expertise with our SEO research to create content that ranks well AND resonates with your customers.</div>
+                <div class="faq-question">Q: Can I choose which social platforms you manage?</div>
+                <div class="faq-answer">A: Yes! While we recommend Facebook & Instagram for most businesses, we can adapt to your audience. LinkedIn, Twitter, or other platforms available upon request.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What if I need more than 3 website updates per month?</div>
-                <div class="faq-answer">Additional updates are available at $50/hour. Most clients find 3 updates sufficient, but we're flexible for busier months.</div>
+                <div class="faq-question">Q: What if I need more than 3 website updates per month?</div>
+                <div class="faq-answer">A: Additional updates are available at $75/hour. Alternatively, consider our Premium package which includes unlimited monthly updates.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Do you write the blog content or do I?</div>
+                <div class="faq-answer">A: We write everything! You provide industry expertise in a brief discovery call, we handle research, writing, optimization, and publishing. Your time investment: ~30 minutes per month for topic approval.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I upgrade to Premium later?</div>
+                <div class="faq-answer">A: Absolutely! Upgrade anytime. We'll credit your current month's payment toward Premium pricing and expand your service immediately.</div>
             </div>
         </div>
     </section>
 
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Accelerate Your Growth?</h2>
-            <p>Join businesses who've 2-3x'd their online leads with our Growth package</p>
-            
+            <h2>Ready to Scale Your Digital Presence?</h2>
+            <p>Join established businesses who trust FlowTech to manage their complete digital marketing</p>
             <div class="cta-buttons">
-                <a href="https://buy.stripe.com/eVq00lbnKdQW4Yn6jv93y01" class="cta-button">Get Started — $1,997</a>
-                <a href="/intake-form/" class="cta-button cta-button-secondary">Free Consultation</a>
+                <a href="https://buy.stripe.com/eVq00lbnKdQW4Yn6jv93y01" class="cta-button">Start Growing Today</a>
+                <a href="/intake-form" class="cta-button cta-button-secondary">Schedule Free Consultation</a>
             </div>
+            <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.9;">
+                Questions? Email us at hello@flowtechdigital.com.au or call (02) 1234 5678
+            </p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 FlowTech Digital Solutions. ABN 76 689 878 420</p>
-        <p><a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a> | <a href="mailto:hello@flowtechai.online">hello@flowtechai.online</a></p>
-        <div class="footer-nav">
-            <a href="/services/">All Services</a>
-            <a href="/services/starter/">Starter Package</a>
-            <a href="/services/premium/">Premium Package</a>
+        <div class="container">
+            <p>&copy; 2025 FlowTech Digital Solutions. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="/services">All Services</a>
+                <a href="/services/starter" style="margin: 0 1rem;">Starter Package</a>
+                <a href="/services/premium">Premium Package</a>
+            </p>
         </div>
     </footer>
 </body>
